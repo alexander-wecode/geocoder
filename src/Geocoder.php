@@ -121,7 +121,7 @@ class Geocoder
          //   'formatted_address' => $response->results[0]->formatted_address,
          //   'viewport' => $response->results[0]->geometry->viewport,
        // ];
-        return $response;
+        return (array) $response;
     }
 
     protected function getRequestPayload(array $parameters): array
