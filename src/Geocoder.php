@@ -114,13 +114,14 @@ class Geocoder
 
     protected function formatResponse($response): array
     {
-        return [
-            'lat' => $response->results[0]->geometry->location->lat,
-            'lng' => $response->results[0]->geometry->location->lng,
-            'accuracy' => $response->results[0]->geometry->location_type,
-            'formatted_address' => $response->results[0]->formatted_address,
-            'viewport' => $response->results[0]->geometry->viewport,
-        ];
+        //return [
+         //   'lat' => $response->results[0]->geometry->location->lat,
+          //  'lng' => $response->results[0]->geometry->location->lng,
+         //   'accuracy' => $response->results[0]->geometry->location_type,
+         //   'formatted_address' => $response->results[0]->formatted_address,
+         //   'viewport' => $response->results[0]->geometry->viewport,
+       // ];
+        return $response;
     }
 
     protected function getRequestPayload(array $parameters): array
